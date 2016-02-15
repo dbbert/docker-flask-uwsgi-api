@@ -1,7 +1,7 @@
 FROM continuumio/miniconda3
 
 RUN mkdir -p /code
-COPY environment.yml /code
+COPY environment.yml /code/environment.yml
 WORKDIR /code
 RUN conda env create
 
